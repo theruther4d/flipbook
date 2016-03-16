@@ -5,10 +5,11 @@ import rename from 'gulp-rename';
 import prefix from 'gulp-autoprefixer';
 import ugly from 'gulp-uglify';
 import del from 'del';
+import babel from 'gulp-babel';
 
 const OUTPUT_DIR = './dist';
 const SCRIPT_DIR = './src/scripts/flipbook.js';
-const STYLE_DIR = './src/css/scss/main.scss';
+const STYLE_DIR = './src/css/main.scss';
 
 gulp.task( 'default', ['clean', 'scripts', 'css'] );
 
